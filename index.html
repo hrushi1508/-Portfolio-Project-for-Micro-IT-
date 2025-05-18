@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav>
+        <h2>Portfolio</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="intro">
+            <h1>Lakshmi Hrushikesh Vadlamudi</h1>
+            <p>I’m driven by a passion for building seamless digital experiences. My focus is on creating user-friendly and efficient web interfaces. I aim to enhance user satisfaction through thoughtful design. Every project I take on is centered around clarity, usability, and impact.</p>
+            <br>
+            <div class="icons">
+            <a href="https://www.linkedin.com/in/lakshmihrushikesh-vadlamudi" class="icon"><i class="bi bi-linkedin"> Linkedin</i></a>
+            <a href="https://www.instagram.com/hrushi_1508" class="icon"><i class="bi bi-instagram"> Instagram</i></a>
+            <a href="https://github.com/hrushi1508" class="icon"><i class="bi bi-github"> Github</i></a>
+            </div>
+        </div>
+        <div class="photo" >
+            <img src="/without-react/public/profile-pic.jpg" alt="profile-pic" id="profile-pic" onmouseover="rotate3d('profile-pic')">
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <h1>About</h1>
+        <div>
+            <p>I'm an aspiring Full-Stack Web Developer passionate about building user-friendly and accessible digital experiences. With a strong foundation in the MERN stack (MongoDB, Express.js, React.js, Node.js), I specialize in crafting dynamic, secure, and responsive web applications.</p>
+            <br>
+            <ul>
+                <li>Developing full-stack apps like task managers.</li>
+                <li>Implementing JWT-based authentication, protected routes, and RESTful APIs.</li>
+                <li>Designing intuitive user interfaces using HTML, CSS, JavaScript, Tailwind, and Figma.</li>
+                <li>Managing MongoDB databases with proper relationships, indexing, and CRUD operations.</li>
+            </ul>
+            <br>
+            <p>Beyond web development, I explore IoT and embedded systems. I’ve built assistive tech solutions using Arduino Nano, NRF24L01, and Voice Recognition Modules, focused on accessibility for the visually impaired.</p>
+            <br>
+            <p>I believe in using technology to simplify lives—and I’m constantly learning, building, and evolving.</p>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h1>Skills</h1>
+        <div class="skill">
+            <h2>Languages</h2>
+            <br>
+            <div class="languages">
+                <div class="language">
+                    <img src="./public/html.png" alt="html">
+                    <p>HTML</p>
+                </div>
+                 <div class="language">
+                    <img src="./public//css-3.png" alt="css">
+                    <p>CSS</p>
+                 </div>
+                <div class="language">
+                    <img src="./public/java.png" alt="java">
+                    <p>Java</p>
+                </div>
+                <div class="language">
+                    <img src="./public/letter-c.png" alt="clanguage">
+                    <p>C Language</p>
+                </div>
+                <div class="language">
+                    <img src="./public/python.png" alt="python">
+                    <p>Python</p>
+                </div>
+                <div class="language">
+                    <img src="./public/sql.png" alt="sql">
+                    <p>SQL</p>
+                </div>
+                <div class="language">
+                    <img src="./public/react.svg" alt="React" style="width: 90%;">
+                    <p>React</p>
+                </div>
+            </div>
+            <br>
+            <h2>Softwares</h2>
+            <br>
+            <div class="softwares">
+                <div class="software">
+                    <img src="./public/figma.png" alt="figma">
+                    <p>Figma</p>
+                </div>
+                <div class="software">
+                    <img src="./public/social.png" alt="git">
+                    <p>Git</p>
+                </div>
+                <div class="">
+                    <img src="./public/gitlab.png" alt="GitLabs" style="width: 15%; cursor: pointer;">
+                    <p style="cursor: pointer;">GitLabs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Projects</h1>
+    <div class="projects" id="projects">
+        <div class="project" onclick="anchor('https://github.com/hrushi1508/Voice-Based-communication-System-for-Blind')" onmouseover="rotate3d('p1')" id="p1">
+            <h3>Voice Based Communication System</h3>
+            <br>
+            <p>An indoor object searching system designed for visually impaired users using voice commands. It uses Arduino Nano, NRF24L01 modules, and a Voice Recognition Module V3. On voice input, the system wirelessly signals the corresponding receiver to activate a buzzer near the desired object.</p>
+            <br>
+            <p><b>Tech used </b>: C++ with Arduino for controlling NRF24L01 and Voice Recognition Module</p>
+        </div>
+        <div class="project" onclick="anchor('https://github.com/hrushi1508/Taskmanagment_app')" onmouseover="rotate3d('p2')" id="p2">
+            <h3>Secure Task-Managment Web App</h3>
+            <br>
+            <p>A task management app allows users to securely manage their daily tasks with features like user authentication (signup, login), protected routes, task creation, editing, deletion, and status updates. It ensures personalized access, real-time updates, and a user-friendly interface for effective productivity.</p>
+            <br>
+            <p><b>Tech used </b>: MERN Stack</p>
+        </div>
+        <div class="project" onclick="anchor('https://github.com/hrushi1508/Micro-IT-Project/tree/b1/project1')" onmouseover="rotate3d('p3')" id="p3">
+            <h3>Tic-Tac-Toe</h3>
+            <br>
+            <p>A classic Tic Tac Toe game where two players take turns marking X and O on a 3×3 grid. The game checks for a winner or draw after each move and resets automatically.Added basic security to the Tic Tac Toe game by validating user inputs and preventing script injection. Ensured the game runs in a controlled environment without unauthorized code execution.</p>
+            <br>
+            <p><b>Tech used </b>: HTML, CSS, JS (Scripting Languages)</p>
+        </div>
+    </div>
+
+    <div class="contacts" id="contact">
+        <h1>Contact</h1>
+        <div class="contact">
+            <i class="bi bi-telephone"> Phone : +91-6304363931</i>
+            <i class="bi bi-geo-alt"> Location : Guntur, Andhra pradesh, India.</i>
+            <i class="bi bi-envelope"> Gmail : v.l.hrushi@gmail.com</i>
+            
+        </div>
+    </div>
+    <footer>
+        <p>2025 &copy; copy rights by lakshmi hrushikesh vadlamudi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
